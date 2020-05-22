@@ -1,10 +1,16 @@
 package main
 
 import (
-	"github.com/jturne3428/greeter/greeter"
+	greeter "github.com/jturne3428/greeter/packGreet"
 )
 
 func main() {
-	g := greeter.NewGreeter()
+	//declare Greeter type (struct) in the package greeter
+	g := greeter.Greeter{}
+
+	//calling functions which use Greeter type as object
+	g.NewGreeter()
 	g.Say("Jessica")
+
+	g.Say("Cat")
 }

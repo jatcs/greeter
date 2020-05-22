@@ -7,12 +7,11 @@ import (
 type Greeter struct {
 }
 
-func NewGreeter() *Greeter {
+func (g *Greeter) NewGreeter() *Greeter {
 
 	return &Greeter{}
 }
 
-func (g*Greeter)Say(name string) {
+func (g *Greeter) Say(name string) {
 	fmt.Printf("Hi %s!\n", name)
 }
-
