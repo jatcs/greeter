@@ -1,0 +1,2 @@
+# greeter
+sample go module
